@@ -1,0 +1,62 @@
+@import url("reset.css");
+
+/*------------------------------------------------*/
+a{
+    color: aqua;
+}
+
+span{
+    color: deeppink;
+}
+
+.title mark{
+    background-color: orange;
+}
+
+.chess > a + ul{
+    color: green;
+}
+
+.list a{
+    color: green;
+}
+
+.list__item.history{
+    color: blue;
+}
+.list__item.champions{
+    color: brown;
+}
+
+.page p{
+    color: grey;
+}
+
+.page__history .some-span{
+    color: blueviolet;
+}
+
+a.rule{
+    color: chartreuse;
+}
+
+.list-of-champions ul > li > a{
+    color: black;
+}
+
+.page__champions p{
+    color: black;
+}
+
+#magnus h2 {
+    color: gold;
+}
+#ding h2{
+    color: silver;
+}
+#anand h2{
+    color: brown;
+}
+#nowadays ~ p{
+    color: chocolate;
+}
