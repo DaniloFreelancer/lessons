@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url("reset.css");
+
+/*-------------------------------------------------------------*/
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.47;
+  color: #7d7d7d;
+}
+
+/*-------------------------------------------------------------*/
+[class*="__container"]{
+  max-width: 1200px;
+  /*1170*/
+}
+
+/*-------------------------------------------------------------*/
+
+.title-photo {
+  margin-bottom: 24px;
+}
+
+/*-------------------------------------------------------------*/
+
+.first-container .title,
+.second-container .sub-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+  text-transform: capitalize;
+}
+
+/*-------------------------------------------------------------*/
+
+.first-container .title {
+  color: #37393f;
+  font-size: 30px;
+  margin: 0px 0px 3px 0px;
+}
+
+.first-container p {
+  margin-bottom: 42px;
+}
+
+/*--------------------------------------------------------------*/
+
+.second-container .sub-title {
+  color: #6b77e5;
+  font-size: 20px;
+  margin: 0px 0px 12px 0px;
+}
+
+.second-container p {
+  margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------*/
+
+.third-container {
+  margin-bottom: 100px;
+}
+
+.third-container img {
+  margin-right: 29px;
+}
+
+.vertical-align .vertical-align-title,
+.vertical-align-title-first {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.vertical-align {
+  display: inline-block;
+}
+.vertical-align .vertical-align-title {
+  color: #37393f;
+  font-size: 25px;
+  margin: 0px 0px 15px 0px;
+}
+
+.vertical-align .vertical-align-title-first {
+  color: #40ddb6;
+  font-size: 20px;
+  margin: 0px 0px 23.5px 0px;
+}
+
+.vertical-align-list .item-list {
+  color: #7d7d7d;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: normal; /*110%-120%*/
+  margin: 0px 0px 35px 0px;
+}
+
+/*--------------------------------------------------------------*/
+.second-container{
+  display: inline-block;
+}
+
+.second-sub-title {
+  color: #d06b00;
+  font-family: Inter;
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+
+.inline-block.container {
+  margin: 0px 38px 0px 0px;
+}
+
+.inline-block-title {
+  color: #0e333d;
+  font-family: DM Serif Text;
+  font-size: 59px;
+  line-height: 1.46;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.inline-block.container p {
+  color: #474747;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.second-page img{
+  margin-right: 22px;
+}
