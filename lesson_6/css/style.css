@@ -1,0 +1,168 @@
+/*Підключення шрифтів*/
+@import url("fonts.css");
+
+/*Обнулення*/
+@import url("reset.css");
+
+/*-------------------------------------------------------------*/
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+/*-------------------------------------------------------------*/
+
+.first-page{
+  max-width: 712px; /*692(ширина макету)+20(внутрішній відступ зліва(10px)_справа(10px))*/
+  margin: 0 auto;
+  line-height: 1.47;
+  padding: 30px 10px;
+}
+
+.photo,
+.benefits-photo{
+  max-width: 100%;
+}
+
+.photo{
+  margin-bottom: 24px;
+}
+
+.title,
+.sub-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+  text-transform: capitalize;
+}
+
+.title,
+.sub-title,
+.content-title,
+.content-sub-title{
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  color: #37393f;
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+
+.first-page .title-text {
+  margin-bottom: 42px;
+}
+
+.sub-title {
+  color: #6b77e5;
+  font-size: 20px;
+  margin: 0px 0px 12px 0px;
+}
+
+.first-page .sub-title-text {
+  margin-bottom: 40px;
+}
+
+.benefits{
+  font-size: 0; /*прибралил фантомний відступ*/
+  margin-bottom: 50px;
+}
+
+.benefits-photo{
+  width: 331px;
+  margin-right: 29px;
+}
+
+.content{
+  display: inline-block;
+  width: 332px;
+  font-size: 18px; /*Повертаємо задану величену*/
+}
+
+.content-title,
+.content-sub-title {
+  font-weight: 600;
+  line-height: 1.27;
+}
+.content-title {
+  color: #37393f;
+  font-size: 25px;
+  margin: 0px 0px 15px 0px;
+}
+
+.content-sub-title {
+  color: #40ddb6;
+  font-size: 20px;
+  margin: 0px 0px 23.5px 0px;
+}
+
+.content-list .item-list {
+  color: #7d7d7d;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: normal; /*110%-120%*/
+  margin: 0px 0px 35px 0px;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+.second-page{
+  font-family: "Inter", sans-serif;
+  color: #474747;
+  max-width: 1189px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  font-size: 0;
+}
+
+.second-page-title{
+  color: #d06b00;
+  font-size: 28px;
+  text-transform: capitalize;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.custom {
+  display: inline-block;
+  margin-right: 38px;
+  width: 563px;
+}
+/*563*/
+.custom-title {
+  color: #0e333d;
+  font-family: DM Serif Text;
+  font-size: 59px;
+  line-height: 1.46;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.custom-title-text {
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.image-left,
+.image-right{
+  width: 273px;
+}
+
+.image-left{
+  margin-right: 22px;
+}
+
+/*--------------------------------------------------------------*/
+
+.project{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b77e5;
+  text-shadow: 2px 2px 3px purple;
+}
