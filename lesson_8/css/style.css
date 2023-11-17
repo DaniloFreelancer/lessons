@@ -541,14 +541,12 @@ a:hover {
 
 /*===================================================*/
 
-.background{
-  font-size: 18px;
+.background p{
   background: url(../img/background-image.jpeg) right center / 200px no-repeat; /*color  image  position / size repeat atachment*/
   margin: 0px 0px 15px 0px;
 }
 
 .multi-background p{
-  font-size: 18px;
   background: url(../img/background-image.jpeg) center / 200px no-repeat,
   linear-gradient(90deg, rgba(213,191,77,1) 0%, rgba(247,97,236,1) 70%, rgba(121,202,255,1) 91%, rgba(11,207,254,1) 100%, rgba(0,212,255,1) 100%) center / cover no-repeat;
 }
