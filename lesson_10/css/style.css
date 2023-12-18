@@ -7,7 +7,6 @@ body{
     color: rgb(50, 50, 50);
     font-family: "Shantell Sans", sans-serif;
     font-size: 25px;
-    background: rgb(220,240,162);
     background: linear-gradient(90deg, rgba(220,240,162,0.7708333333333334) 2%, rgba(255,255,255,1) 52%, rgba(179,136,198,0.8240546218487395) 99%);
 }
 
