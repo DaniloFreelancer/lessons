@@ -1,0 +1,99 @@
+/*Підключення шрифтів*/
+@import url("fonts.css");
+/*Обнулення*/
+@import url("reset.css");
+
+body{
+    color: rgb(50, 50, 50);
+    font-family: "Shantell Sans", sans-serif;
+    font-size: 25px;
+    background: rgb(220,240,162);
+    background: rgb(220,240,162);
+    background: linear-gradient(90deg, rgba(220,240,162,0.7708333333333334) 2%, rgba(255,255,255,1) 52%, rgba(179,136,198,0.8240546218487395) 99%);
+}
+
+/*==================================================*/
+
+.header__container{
+    padding: 40px 0;
+    margin: 0 auto;
+    background: rgb(164,164,164);
+    background: linear-gradient(90deg, rgba(164,164,164,1) 36%, rgba(153,245,188,1) 92%);
+    box-shadow: 5px 0px 10px red; /*horizontal, vertical, blur radius, color*/
+    border-radius: 30%;
+    margin-bottom: 100px;
+}
+
+.header-title h1,
+.footer__container p{
+    text-align: center;
+    font-family: "Rubik Dirt", sans-serif;
+    color: brown;
+    font-size: 50px;
+    letter-spacing: 7px;
+    text-shadow: 8px 2px 0px rgba(0,0,0,0.44);  /*horizontal, vertical, blur radius, color*/
+}
+
+/*==================================================*/
+
+.page__container{
+    max-width: 950px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    border: 5px solid grey;
+    background-color: #FFE7A0;
+    margin-bottom: 100px;
+}
+
+.text span {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: rgb(50, 50, 50);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.text span:hover {
+    box-shadow: inset 305px 0 0 0 #54b3d6;
+    color: white;
+}
+
+.text .long-span{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: rgb(50, 50, 50);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.text .long-span:hover {
+    box-shadow: inset 405px 0 0 0 #54b3d6;
+    color: white;
+}
+
+.margin{
+    margin-bottom: 20px;
+}
+
+.page__container *:last-child{
+    margin-bottom: 0px;
+}
+
+.img-hover__icon{
+    vertical-align: middle;
+    min-width: 40px;
+}
+
+.img-hover__content{
+    vertical-align: middle;
+    /* max-width: 300px; */
+    max-height: 200px;
+}
+
+.img-hover__icon:hover{
+    transform: scale(1.1);
+}
+
+.img-hover__content:hover{
+    transform: scale(1.05);
+}
