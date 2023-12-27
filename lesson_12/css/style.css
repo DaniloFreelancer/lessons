@@ -1,0 +1,305 @@
+/* Підключення шрифтів */
+@import url("fonts.c@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");ss");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(186, 227, 71, 1) 19%,
+    rgba(57, 225, 226, 1) 49%,
+    rgba(208, 40, 40, 1) 86%
+  );
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/*=======================================================*/
+
+.header {
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(208, 155, 40, 1) 20%,
+    rgba(57, 225, 226, 1) 51%,
+    rgba(71, 100, 227, 1) 88%
+  );
+}
+
+.header--fix {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__logo {
+  display: inline-block;
+  margin: 0px 350px 0px 0px;
+  vertical-align: middle;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+  background-color: rgb(169, 169, 67);
+  padding: 15px 20px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu__item:hover {
+  background-color: rgb(214, 214, 45);
+  color: white;
+  border-radius: 10px;
+}
+
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 15px;
+  color: #000;
+  width: 150px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.menu__item:hover .sub-menu {
+  visibility: visible;
+}
+
+.sub-menu__item {
+  background-color: rgb(122, 66, 122);
+  position: relative;
+}
+
+.sub-menu__item:hover {
+  background-color: rgb(169, 69, 169);
+  color: white;
+}
+
+.sub-menu__link {
+  display: inline-block;
+  padding: 10px;
+}
+
+.sub-menu__link:hover {
+  transform: scale(1.05);
+}
+
+.section-list {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+  width: 200px;
+  text-align: center;
+  visibility: hidden;
+  padding-left: 10px;
+}
+
+.sub-menu__item:hover .section-list {
+  visibility: visible;
+}
+
+.section-list__item {
+  background-color: rgb(59, 58, 137);
+  position: relative;
+  color: #000;
+}
+
+.section-list__item:hover {
+  background-color: rgb(62, 60, 185);
+  color: white;
+}
+
+.section-list__item:hover::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(209, 49, 49);
+}
+
+.section-list__link {
+  display: inline-block;
+  padding: 10px;
+}
+
+/*=======================================================*/
+
+[class*="__container"] {
+  max-width: 1295px;
+  margin: 0 auto;
+}
+
+.page {
+  padding-top: 100px;
+}
+
+.decor {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 0px -50px 0px 0px;
+}
+
+.decor-1 {
+  background-color: rgb(108, 209, 176);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  margin: 0px 0px 0px -50px;
+}
+
+.page__container {
+  padding: 15px 20px;
+}
+
+.top-row--margin {
+  margin: 0px 0px 31px 0px;
+}
+
+.top-row__content,
+.buttom-row__content {
+  position: relative;
+  display: inline-block;
+}
+
+.top-row__content:not(:last-child),
+.buttom-row__content:not(:last-child) {
+  margin: 0px 31px 0px 0px;
+}
+
+.card-image {
+  max-width: 386px;
+  height: 532px;
+}
+
+.card-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #6b77e5;
+}
+
+.card-image:hover::before {
+  opacity: 0.5;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 386px;
+}
+
+.card-image:hover {
+  background-color: #6b77e5;
+}
+
+.card-image__hover {
+  position: absolute;
+  top: 241px;
+  left: 108px;
+  visibility: hidden;
+}
+
+.card-image__hover img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.card-image__hover a:not(:last-child) {
+  margin: 0px 13px 0px 0px;
+}
+
+.card-image:hover .card-image__hover {
+  visibility: visible;
+}
+
+.card-image__hover img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #e78267;
+}
+
+.card-text {
+  position: absolute;
+  background-color: #fff;
+  padding: 24px 45px;
+  bottom: 22px;
+  left: 22px;
+  width: 341px;
+}
+
+.card-text h3 {
+  text-align: center;
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px 0px 13px 0px;
+}
+
+.card-text p {
+  text-align: center;
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+[class*="__banner"] {
+  width: 100%;
+  position: sticky;
+  top: 80px;
+  left: 0;
+  z-index: 49;
+}
+
+.content__banner h2 {
+  background-color: #6b77e5;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.content:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.footer__text{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
