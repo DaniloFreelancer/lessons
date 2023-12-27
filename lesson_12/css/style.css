@@ -1,5 +1,5 @@
 /* Підключення шрифтів */
-@import url("fonts.c@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");ss");
+@import url("fonts.css");
 
 /* Скидання стилів */
 @import url("reset.css");
@@ -298,8 +298,8 @@ body {
 }
 
 .footer__text{
+  color: orangered;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 35px;
 }
