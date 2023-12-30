@@ -1,0 +1,242 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 219, 219, 1) 4%,
+    rgba(122, 110, 225, 1) 41%,
+    rgba(180, 190, 221, 1) 65%,
+    rgba(204, 109, 202, 1) 82%
+  );
+  font-family: "Single Day", sans-serif;
+  font-size: 25px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/*=======================================================*/
+
+[class*="__container"] {
+  max-width: 1000px;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.transform__title,
+.footer__title {
+  text-align: center;
+  font-family: "Rubik Spray Paint", sans-serif;
+  font-size: 45px;
+  line-height: 1.37;
+  color: gold;
+  letter-spacing: 1.2px;
+}
+
+.transform__body:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+
+.items__box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.35);
+  border-radius: 20%;
+}
+
+.items__box:not(:last-child) {
+  margin: 0px 30px 50px 0px;
+}
+
+.items__title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  background-color: orangered;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.items__title h4,
+.flip__front h4,
+.flip__back h4 {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.items__box:hover .title-translate {
+  transform: translate(10px, 10px);
+}
+
+.items__box:hover .title-scale {
+  transform: scale(1.2, 0.5);
+}
+
+.items__box:hover .title-rotate {
+  transform: rotate(45deg);
+}
+
+.items__box:hover .title-skew {
+  transform: skew(-20deg, 10deg);
+}
+
+.items__box:hover .title-matrix {
+  transform: matrix(2.33, 0.49, 0.42, 1.84, 50, -50);
+}
+
+.items__box:hover .title-multi {
+  transform: translate(20px, 20px) scale(1.05) rotate(-45deg);
+}
+
+.items__box:hover .title-origin {
+  transform-origin: top right;
+  transform: rotate(-30deg);
+}
+
+/*=======================================================*/
+
+.items__box--perspective {
+  perspective: 300px;
+}
+
+.items__box--origin {
+  perspective-origin: center;
+}
+
+.items__box:hover .title-perspective-origin {
+  transform: rotateX(50deg);
+}
+
+.items__box:hover .title-translate-3d {
+  transform: translate3d(20px, 30px, 40px);
+}
+
+.items__box:hover .title-scale-3d {
+  transform: scale3d(0.5, 1.2, 1.1);
+}
+
+.items__box:hover .title-rotate-3d {
+  transform: rotate3d(0.5, 1, 0.5, -50deg);
+}
+
+.items__box:hover .title-matrix-3d {
+  transform: matrix3d(
+    -0.1207,
+    -0.94,
+    0.71,
+    0.001,
+    0.94,
+    -0.35496,
+    0.5,
+    0.003,
+    -0.71,
+    -0.5,
+    0.6176999999999999,
+    0,
+    10,
+    11,
+    2,
+    1
+  );
+}
+
+.items__box:hover .title-multi-3d {
+  transform: translate3d(20px, 30px, 40px) scale3d(0.5, 1.2, 1.1)
+    rotate3d(0.5, 1, 0.5, -50deg);
+}
+
+.item__box--style {
+  transform-style: preserve-3d;
+}
+
+.items__box:hover .title-transform-style-3d {
+  transform: rotateX(-45deg);
+}
+/* 
+.item__box:hover .title-backface-visibility-3d{
+  backface-visibility: ;
+} */
+
+.items__flip {
+  display: inline-block;
+}
+
+.flip__body {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  perspective: 500px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.flip__front,
+.flip__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.6s;
+  border-radius: 20%;
+}
+
+.flip__front {
+  background-color: orangered;
+  transform: rotateY(0deg);
+
+  backface-visibility: hidden;
+}
+
+.flip__back {
+  background-color: crimson;
+  transform: rotateY(-180deg);
+  -webkit-clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
+  clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
+}
+
+.flip__body:hover .flip__back {
+  transform: rotateY(0deg);
+}
+
+.flip__body:hover .flip__front {
+  transform: rotateY(180deg);
+}
+
+.link-footer__item{
+  padding: 10px;
+  position: relative;
+}
+
+.link-footer__item h2{
+  position: relative;
+}
+
+.link-footer__item::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  background-color: #2f2d2d;
+  transform: skew(-20deg, 0deg);
+  
+}
+
+.link-footer__item:hover::before{
+  transform: skew(20deg, 0deg);
+}
