@@ -1,0 +1,330 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  background-color: rgb(135, 212, 250);
+  overflow-y: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/*===========================================================*/
+
+.page__container {
+  max-width: 2000px;
+  min-height: 1000px;
+}
+
+.environment__ground {
+  position: absolute;
+  /* top: 100%; */
+  top: 80%;
+  left: 2%;
+  /* transform: translate(3%, 100%); */
+  width: 95%;
+  height: 450px;
+  background-color: rgb(66, 187, 66);
+  border-radius: 400px 400px 0px 0px;
+  z-index: 5;
+}
+
+.element-house__roof {
+  position: absolute;
+  top: 121px;
+  left: 26.3%;
+  width: 0;
+  height: 0;
+  border-left: 151px solid transparent;
+  border-right: 151px solid transparent;
+  border-bottom: 101px solid #fffaa0;
+}
+
+.element-house__wall {
+  position: absolute;
+  top: 31%;
+  left: 26.35%;
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  /* transform: translate(400px, 63%); */
+  background-color: #fffaa0;
+  z-index: 6;
+  border-right: 2px solid rgb(185, 185, 185);
+}
+
+.element-house__window {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 15%;
+  left: 10%;
+  background-color: rgb(114, 184, 224);
+  border: 8px solid white;
+}
+
+.element-house__window::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  background-color: #fff;
+  left: 45%;
+}
+.element-house__window::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  left: 45%;
+}
+
+.element-house__window:nth-child(2) {
+  top: 15%;
+  left: 65%;
+}
+
+.element-house__window:nth-child(3) {
+  top: 60%;
+  left: 10%;
+}
+
+.element-house__window:nth-child(4) {
+  top: 60%;
+  left: 65%;
+}
+
+.element-house__wall-incoming {
+  position: absolute;
+  top: 31%;
+  left: 45.9%;
+  width: 120px;
+  height: 350px;
+  background-color: #fff;
+  background-color: #fffaa0;
+  z-index: 6;
+  border-right: 2px solid rgb(185, 185, 185);
+  border-left: 2px solid rgb(185, 185, 185);
+}
+
+.element-house__incoming-window {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 15%;
+  left: 16%;
+  background-color: rgb(114, 184, 224);
+  border: 8px solid white;
+}
+
+.element-house__incoming-window::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  background-color: #fff;
+  left: 45%;
+}
+.element-house__incoming-window::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  left: 45%;
+}
+
+.element-house__door {
+  position: absolute;
+  z-index: 6;
+  top: 71.5%;
+  left: 30%;
+  width: 40px;
+  height: 100px;
+  background-color: rgb(247, 247, 91);
+}
+
+.door__handle {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(185, 185, 185);
+  border-radius: 50%;
+  z-index: 7;
+}
+
+.element-house__color-roof {
+  position: absolute;
+  top: 19.2%;
+  left: 39.1%;
+  width: 180px;
+  height: 68px;
+  transform: rotate(34deg) skewX(-56deg);
+  background-color: orangered;
+  border-radius: 2px solid rgb(185, 185, 185);
+  z-index: 7;
+}
+
+.environment__clouds {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.cloud__one {
+  background: rgba(255, 255, 255);
+  width: 300px;
+  height: 100px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: move 3s infinite linear;
+}
+
+.cloud__one:after {
+  content: "";
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+.cloud__one:before {
+  content: "";
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-40px);
+  }
+}
+.environment__sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px yellow;
+}
+
+/*===========================================================*/
+
+.character__peppa {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  /* transform: rotateY(-180deg); */
+  z-index: 10;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.character__peppa img {
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes appear {
+  0% {
+    top: 10%;
+    left: 90%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    top: 25%;
+    left: 70%;
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    top: 60%;
+    left: 60%;
+    visibility: visible;
+    opacity: 1;
+    /* animation-name: ; */
+  }
+}
+
+.character__dialog {
+  position: absolute;
+  top: 60%;
+  left: 52%;
+  width: 150px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #000;
+  z-index: 9;
+}
+
+.dialog__title{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dialog__sub-title{
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+
+.dialog__link{
+  font-family: "Poppins", sans-serif;
+  background-color: orange;
+}
+
+.want:hover{
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.not-want:hover{
+  border-radius: 10px;
+  background-color: orangered;
+}
+
+.dialog__link:not(:last-child){
+  margin-right: 5px;
+}
+
+.character__dialog{
+  animation-name: talk;
+  animation-duration: 2.15s;
+  animation-timing-function: linear;
+}
+
+@keyframes talk {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 1;
+  }
+}

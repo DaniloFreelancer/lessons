@@ -1,0 +1,240 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  overflow: hidden;
+  background: url(../img/road.webp) 0 0 / cover repeat no-repeat;
+  animation: test 50s linear infinite;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+/*===============================================*/
+
+@keyframes test{
+  100%{
+    background-position-x: -1200px;
+  }
+}
+
+.car {
+  max-width: 900px;
+  min-height: 400px;
+}
+
+.car__body {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  width: 850px;
+  height: 250px;
+  border-radius: 150px 150px 0px 0px;
+  border: 8px solid rgb(187, 37, 37);
+  background-color: rgb(251, 55, 55);
+  z-index: 7;
+
+  animation-name: movement;
+  animation-delay: 1s;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30%, 0) scale(0.5);
+  }
+  100% {
+    /* top: 55%;
+        left: 100%; */
+    transform: translate(2000%, 0);
+  }
+}
+
+.section__seat {
+  position: absolute;
+  top: -46%;
+  left: 15%;
+  width: 150px;
+  height: 100px;
+  border-radius: 200px 200px 0px 0px;
+  background-color: chocolate;
+  transform: skewX(10deg);
+  z-index: 2;
+}
+
+.section__seat:nth-child(2) {
+  position: absolute;
+  top: -46%;
+  left: 28%;
+  width: 150px;
+  height: 100px;
+  border-radius: 200px 200px 0px 0px;
+  background-color: rgb(184, 93, 28);
+  transform: skewX(10deg);
+  z-index: 1;
+}
+
+.section__seat:nth-child(3) {
+  position: absolute;
+  top: -46%;
+  left: 44%;
+  width: 150px;
+  height: 100px;
+  border-radius: 200px 200px 0px 0px;
+  background-color: chocolate;
+  transform: skewX(10deg);
+  z-index: 2;
+}
+
+.section__seat:nth-child(4) {
+  position: absolute;
+  top: -46%;
+  left: 58%;
+  width: 150px;
+  height: 100px;
+  border-radius: 200px 200px 0px 0px;
+  background-color: rgb(184, 93, 28);
+  transform: skewX(10deg);
+  z-index: 1;
+}
+
+.section__first {
+  position: absolute;
+  top: 0;
+  left: 32%;
+  width: 8px;
+  height: 240px;
+  background-color: rgb(187, 37, 37);
+}
+
+.section__two {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 8px;
+  height: 240px;
+  background-color: rgb(187, 37, 37);
+}
+
+.section__glass {
+  position: absolute;
+  top: -32%;
+  left: 60%;
+  width: 210px;
+  height: 70px;
+  background-color: #00bbf957;
+  border: 8px solid rgb(0, 106, 255);
+  transform: skewX(5deg);
+  z-index: 10;
+}
+
+.section__hood {
+  position: absolute;
+  top: 0;
+  left: 69%;
+  width: 12rem;
+  height: 8rem;
+  transform: rotate(180deg) skewX(30deg);
+  background-color: rgb(251, 55, 55);
+  border-top: 8px solid rgb(187, 37, 37);
+  border-left: 8px solid rgb(187, 37, 37);
+  border-right: 8px solid rgb(187, 37, 37);
+  border-radius: 10rem 10rem 0 0;
+}
+
+.wheel__element-one {
+  position: absolute;
+  top: 73%;
+  left: 65%;
+  width: 10rem;
+  height: 4rem;
+  border-top: 8px solid rgb(187, 37, 37);
+  border-left: 8px solid rgb(187, 37, 37);
+  border-right: 8px solid rgb(187, 37, 37);
+  border-radius: 10rem 6rem 0 0;
+  background-color: rgb(251, 55, 55);
+  z-index: 6;
+}
+
+.wheel__two {
+  position: absolute;
+  top: 82%;
+  left: 8%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: grey;
+  z-index: 5;
+  border: 30px solid black;
+}
+
+.wheel__element-two {
+  position: absolute;
+  top: 73%;
+  left: 5%;
+  width: 10rem;
+  height: 4rem;
+  border-top: 8px solid rgb(187, 37, 37);
+  border-left: 8px solid rgb(187, 37, 37);
+  border-right: 8px solid rgb(187, 37, 37);
+  border-radius: 7rem 11rem 0 0;
+  background-color: rgb(251, 55, 55);
+  z-index: 6;
+}
+
+.wheel__one {
+  position: absolute;
+  top: 82%;
+  left: 69%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: grey;
+  z-index: 5;
+  border: 30px solid black;
+}
+
+.light__one{
+  position: absolute;
+  left: 87%;
+  top: 65%;
+  width: 35px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 163);
+  transform: skewX(20deg);
+  border: 5px solid  rgb(222, 222, 97);;
+}
+
+.light__two{
+  position: absolute;
+  left: 94%;
+  top: 65%;
+  width: 35px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 163);
+  transform: skewX(20deg);
+  border: 5px solid  rgb(222, 222, 97);;
+}
+
+/*===============================================*/
+
+.road{
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+  border: 3px solid white;
+}
