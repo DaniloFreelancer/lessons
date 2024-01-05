@@ -17,11 +17,6 @@ body {
 
 /*===========================================================*/
 
-.page__container {
-  max-width: 2000px;
-  min-height: 1000px;
-}
-
 .environment__ground {
   position: absolute;
   /* top: 100%; */
@@ -35,9 +30,18 @@ body {
   z-index: 5;
 }
 
+.environment__house{
+  position: absolute;
+  top: 9%;
+  left: 16%;
+  width: 600px;
+  min-height: 510px;
+}
+
 .element-house__roof {
   position: absolute;
-  top: 121px;
+  /* top: 121px; */
+  top: 11.3%;
   left: 26.3%;
   width: 0;
   height: 0;
@@ -104,8 +108,10 @@ body {
 
 .element-house__wall-incoming {
   position: absolute;
+  /* top: 31%;
+  left: 45.9%; */
   top: 31%;
-  left: 45.9%;
+  left: 76.2%;
   width: 120px;
   height: 350px;
   background-color: #fff;
@@ -146,7 +152,7 @@ body {
 .element-house__door {
   position: absolute;
   z-index: 6;
-  top: 71.5%;
+  top: 71.2%;
   left: 30%;
   width: 40px;
   height: 100px;
@@ -166,8 +172,8 @@ body {
 
 .element-house__color-roof {
   position: absolute;
-  top: 19.2%;
-  left: 39.1%;
+  top: 14.5%;
+  left: 58.7%;
   width: 180px;
   height: 68px;
   transform: rotate(34deg) skewX(-56deg);
