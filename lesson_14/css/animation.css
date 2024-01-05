@@ -172,7 +172,7 @@ body {
   height: 68px;
   transform: rotate(34deg) skewX(-56deg);
   background-color: orangered;
-  border-radius: 2px solid rgb(185, 185, 185);
+  border: 2px solid rgb(185, 185, 185);
   z-index: 7;
 }
 
