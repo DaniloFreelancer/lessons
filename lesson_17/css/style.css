@@ -210,18 +210,17 @@ body {
 
 /*=======================================================*/
 
-.page__rings{
+.page__rings {
   position: relative;
   background-color: #fefaf4;
   padding: 94px 0px;
 }
 
-@media(max-width: 1440px){
-  .page__rings::before{
+@media (max-width: 1440px) {
+  .page__rings::before {
     opacity: 0.15;
   }
 }
-
 
 .page__rings::before {
   content: "";
@@ -234,7 +233,6 @@ body {
   transform: rotate(-35deg);
   transition: opacity 0.5s ease-in;
 }
-
 
 .ring__title {
   color: #000;
@@ -390,6 +388,11 @@ body {
   }
   .link__text {
     font-size: 20px;
+  }
+  .link__image {
+    width: 30px;
+    flex: 0 0 30px;
+    min-height: 30px;
   }
 }
 
