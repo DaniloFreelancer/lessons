@@ -108,6 +108,7 @@ body {
   border-radius: 5px;
 }
 .item-product__image:not(:last-child) {
+  /* margin: 0 -15px 17px; */
   margin-bottom: 17px;
 }
 .item-product__image img {
@@ -195,11 +196,14 @@ body {
   }
   .products__column {
     flex: 0 0 100%;
-    margin: 0px -15px;
   }
   .item-product__link-title--style,
   .item-product__text {
     font-size: 30px;
+  }
+  .item-product__image:not(:last-child) {
+    margin: 0 -15px 17px; /*Прибираємо відступ, який дає блок products__column(0 - вгорі, ліворуч та праворуч - 
+    прибираємо відступ який дає блок products__column через margin -15px, нижній відступ 17px*/
   }
 }
 /* 
@@ -423,6 +427,9 @@ body {
 @media (max-width: 576px) {
   .card__column {
     flex: 0 0 100%;
+  }
+  .item-card__image:not(:last-child) {
+    margin: 0 -24px 16px;
   }
 }
 
