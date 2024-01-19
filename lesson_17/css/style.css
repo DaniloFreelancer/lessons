@@ -115,12 +115,10 @@ body {
   height: 100%;
   aspect-ratio: 271 / 270;
   transition: all 0.3s ease-out;
+  object-fit: cover;
 }
 .item-product__image img:hover {
   transform: scale(1.05);
-}
-.item-product__image--cover-style {
-  object-fit: cover;
 }
 .item-product__content-text {
   display: flex;
@@ -197,6 +195,7 @@ body {
   }
   .products__column {
     flex: 0 0 100%;
+    margin: 0px -15px;
   }
   .item-product__link-title--style,
   .item-product__text {
@@ -219,6 +218,7 @@ body {
 @media (max-width: 1440px) {
   .page__rings::before {
     opacity: 0.15;
+    /* pointer-events: none; */ /* Щоб об'єкт не накривав кнопку посилання при зменшенні*/
   }
 }
 
@@ -232,6 +232,7 @@ body {
   background: url(../img/section-2/decor.webp) center / cover no-repeat;
   transform: rotate(-35deg);
   transition: opacity 0.5s ease-in;
+  z-index: 3; /*Щоб квітка(декор) не накривала посилання*/
 }
 
 .ring__title {
@@ -336,6 +337,8 @@ body {
   min-height: 24px;
   background: url(../img/section-2/arrow.svg) center / cover no-repeat;
   transition: all 0.3s linear;
+  position: relative; /*Щоб квітка(декор) не накривала посилання*/
+  z-index: 5;  /*Щоб квітка(декор) не накривала посилання*/
 }
 
 .link__image:hover {
