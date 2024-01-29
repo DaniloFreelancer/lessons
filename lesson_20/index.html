@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Lesson 20</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--fixed">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <div class="menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Shop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Men</a>
+                            </li>
+                            <li class="menu__item menu__item--active">
+                                <a href="#" class="menu__link">Women</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Combos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Joggers</a>
+                            </li>
+                        </ul>
+                        <form id="form-search" enctype="multipart/form-data" method="GET" class="header__form form" action="#">
+                            <img src="img/search-icon.svg" alt="Icon" class="form__search-image">
+                            <input type="text" class="form__input" id="search" name="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="buttons__icon">
+                        <img src="img/favorite.svg" alt="Favorite">
+                    </a>
+                    <a href="#" class="buttons__icon">
+                        <img src="img/user.svg" alt="User">
+                    </a>
+                    <a href="#" class="buttons__icon">
+                        <img src="img/shop.svg" alt="Shop">
+                    </a>
+                    <button class="icon-menu">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__hero hero">
+                <div class="hero__container">
+                    <div class="hero__slider slider">
+                        <!--!Слайдеру додати задній фон, бо не видно кнопки-->
+                        <div class="slider__image">
+                            <a href="#"><img src="img/slider-img-1.webp" alt="Girl-1"></a>
+                        </div>
+                        <div class="slider__image slider__image--border">
+                            <a href="#"><img src="img/slider-img-2.webp" alt="Girl-2"></a>
+                        </div>
+                        <div class="slider__image">
+                            <a href="#"><img src="img/slider-img-3.webp" alt="Girl-3"></a>
+                        </div>
+                        <div class="slider__buttons">
+                            <div class="slider__button slider__button--left">
+                                <a href="#"><img src="img/slider-button-up.svg" alt="Button-1"></a>
+                            </div>
+                            <div class="slider__button  slider__button--right">
+                                <a href="#"><img src="img/slider-button-down.svg" alt="Button-2"></a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="hero__body">
+                        <div class="hero__image">
+                            <img src="img/hero-img.webp" alt="Girl">
+                        </div>
+                        <div class="hero__content content">
+                            <ul class="content__list list">
+                                <li class="list__item list__item--hover">
+                                    <a href="#">Shop</a>
+                                </li>
+                                <span></span>
+                                <li class="list__item list__item--hover">
+                                    <a href="#">Women</a>
+                                </li>
+                                <span></span>
+                                <li class="list__item list__item--hover">
+                                    <a href="#">Top</a>
+                                </li>
+                            </ul>
+                            <h1 class="content__title">Raven Hoodie With Black colored Design</h1>
+                            <div class="content__rating rating">
+                                <ul class="rating__list list">
+                                    <li class="list__item">
+                                        <img src="img/star.svg" alt="Star" class="list__start">
+                                    </li>
+                                    <li class="list__item">
+                                        <img src="img/star.svg" alt="Star" class="list__start">
+                                    </li>
+                                    <li class="list__item">
+                                        <img src="img/star.svg" alt="Star" class="list__start">
+                                    </li>
+                                    <li class="list__item">
+                                        <img src="img/star.svg" alt="Star" class="list__start">
+                                    </li>
+                                    <li class="list__item">
+                                        <img src="img/star.svg" alt="Star" class="list__start">
+                                    </li>
+                                    <li class="list__item">3.5</li>
+                                </ul>
+                                <div class="rating__content">
+                                    <div class="rating__comment-img">
+                                        <a href="#"><img src="img/comment.svg" alt="Comment"></a>
+                                    </div>
+                                    <div class="rating__comment-text">120 comment</div>
+                                </div>
+                            </div>
+                            <div class="content__size size">
+                                <div class="size__links">
+                                    <a href="#" class="size__select">Select Size</a>
+                                    <a href="#" class="size__link">Size Guide
+                                    </a>
+                                </div>
+                                <ul class="size__list list">
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/size-xs.svg" alt="XS"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/size-s.svg" alt="S"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/size-m.svg" alt="M"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/size-l.svg" alt="L"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/size-xl.svg" alt="XL"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content__color color">
+                                <h4 class="color__title">Colours Available</h4>
+                                <ul class="color__list list">
+                                    <li class="list__item list__item--border">
+                                        <a href="#"><img src="img/color-1.svg" alt="Color-1"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/color-2.svg" alt="Color-2"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/color-3.svg" alt="Color-3"></a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#"><img src="img/color-4.svg" alt="Color-4"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content__buttons">
+                                <a href="#" class="content__button">Add to cart</a>
+                                <a href="#" class="content__button-price">$63.00</a>
+                            </div>
+                            <div class="content__categories categories">
+                                <div class="categories__product">
+                                    <div href="#"><img src="img/categories-1.svg" alt="Payment"></div>
+                                    <a href="#">Secure payment</a>
+                                </div>
+                                <div class="categories__product">
+                                    <div><img src="img/categories-2.svg" alt="Fit"></div>
+                                    <a href="#">Size & Fitt</a>
+                                </div>
+                                <div class="categories__product">
+                                    <div><img src="img/categories-3.svg" alt="Shipping"></div>
+                                    <a href="#">Free shipping</a>
+                                </div>
+                                <div class="categories__product">
+                                    <div><img src="img/categories-4.svg" alt="Returns"></div>
+                                    <a href="#">Free Shipping & Returns</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+        <script src="js/script.js"></script>
+    </div>
+</body>
