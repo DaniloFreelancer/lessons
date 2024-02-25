@@ -1,0 +1,21 @@
+//lineHeight
+@function lineHeight($num1, $num2) {
+  $result: math.div($num1, $num2);
+  @return $result;
+}
+
+//REM
+@function toRem($num1, $num2: 16) {
+  // 16px - розмір шрифту за замовченням(у хромі)
+  $result: math.div($num1, $num2) + rem;
+  @return $result;
+}
+
+//EM
+@function toEm($num1, $num2: 16) {
+  // 16px - розмір шрифту за замовченням(у хромі)
+  $result: math.div($num1, $num2) + em;
+  @return $result;
+}
+
+// EM - може бути відмінне значення від 16, оскільки EM - береться від поточного або успаткованого розміру шрифту.
