@@ -1,0 +1,32 @@
+@use "sass:math";
+
+// Скидання стилів
+@import "_reset.scss";
+
+//  Підключення шрифтів
+@import "_fonts.scss";
+
+// Функції
+@import "_functions.scss";
+
+// Основні
+body {
+  font-size: toRem(18);
+  .menu-open & {
+    overflow: hidden; //Прибрати скрол сторінки, коли відкрите бургер меню.
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  /*FLEX*/
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex-grow: 1; // Дозволяємо збільшуватись main.
+  }
+}
+
+/*=======================================================*/
